@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 400px) {
+    /* CSS dành cho màn hình nhỏ */
+    .list-cateicons .admin7{
+        width: 80%;
+    }
+    .list-cateicons {
+        justify-content: center;
+    }
+}
+
+/* Đối với màn hình nhỏ */
+@media only screen and (max-width: 600px) {
+    /* CSS dành cho màn hình nhỏ */
+    .list-cateicons .admin7{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* CSS dành cho màn hình nhỏ */
+    table {
+        width: 80%;
+    }
+}
+
+/* Đối với màn hình trung bình */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* CSS dành cho màn hình trung bình */
+}
+
+/* Đối với màn hình lớn */
+@media only screen and (min-width: 1025px) {
+    /* CSS dành cho màn hình lớn */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+
+.all-content {
+    height: 100vh;
+}
+
+table{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.apps{
+    position: relative;
+}
+
+.container1{
+    position: absolute;
+    top: 0;
+    left: -15rem;
+    width: 15rem;
+    height: 100vh;
+    background-color: #15283c;
+    z-index: 2;
+    transition: all 0.3s linear;
+}
+
+.container1.active {
+    left: 0;
+}
+
+.list-category{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-category a{
+    text-decoration: none;
+    color: #ccc;
+    padding: 1rem;
+}
+
+.admin-user{
+    text-align: center;
+    justify-content: center;
+    background-color: #214162 !important;
+}
+
+.admin-user img {
+    max-width: 30%;
+    border-radius: 100% 100%;
+    margin: 1rem;
+}
+
+.admin-user h3{
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.admin-name {
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 4rem;
+    background-color: #15283c;
+    position: relative;
+}
+
+.header-left {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s linear;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container1.active + header > .header-left {
+    left: 16rem;
+}
+
+.header-left i {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.header-right{
+    width: 13rem;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff5722;
+    color: #fff;
+    position: absolute;
+    right: 0;
+}
+
+.header-right1 {
+    position: absolute;
+    width: 13rem;
+    top: 4rem;
+    right: 0;
+    background-color: #1fc4b1;
+    padding: 1rem 3rem;
+    text-align: center;
+    opacity: 0;
+}
+
+.header-right1.active {
+    opacity: 1;
+}
+
+.header-right1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-right img {
+    max-width: 20%;
+    border-radius: 100% 100%;
+}
+
+.header-right span {
+    padding: 0 0.5rem;
+}
+
+/* LIST-CATEICONS */
+
+.list-cateicons {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+    flex: 1;
+}
+
+.main {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #f7e6a1;
+}
+
+.main .box {
+    width: 0;
+    transition: all 0.3s linear;
+}
+
+.main.active {
+    width: calc(100% - 15rem);
+}
+
+.box.active {
+    width: 15rem;
+}
+
+.admin7 {
+    width: 30%;
+    height: max-content;
+    text-align: center;
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.admin1  > i{
+    font-size: 3rem;
+    color: #2196f3;
+}
+
+.admin2  > i{
+    font-size: 3rem;
+    color: #20c997;
+}
+
+.admin3  > i{
+    font-size: 3rem;
+    color: #17a2b8;
+}
+
+.admin4  > i{
+    font-size: 3rem;
+    color: #dc3545;
+}
+
+.admin5  > i{
+    font-size: 3rem;
+    color: #e91e63;
+}
+
+.admin6  > i{
+    font-size: 3rem;
+    color: #ff9800;
+}
+
+.admin7 > h3 {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+}
+
+.admin7 > p {
+    font-size: 1rem;
+}
+
+.list-donhang {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 3rem 4rem;
+}
+
+footer > p {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.main1 {
+    display: flex;
+}
+
+.box1 {
+    width: 0;
+    transition: all 0.3s linear;
+}
+
+.box1.active {
+    width: 15rem;
+}
